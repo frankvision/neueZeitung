@@ -23,11 +23,15 @@ async function loadArticles() {
   articles.forEach(article => {
     const element = document.createElement("article");
 
-    element.innerHTML = `
-      <h2>${article.title}</h2>
-      <p>${article.excerpt ?? ""}</p>
-      <p>${article.category ?? ""}</p>
-    `;
+element.innerHTML = `
+  <h2>${article.title}</h2>
+
+  <div class="article-content">
+    ${article.content ?? ""}
+  </div>
+
+  <p>${article.category ?? ""}</p>
+`;
 
     container.append(element);
   });
