@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ofa-space: 20px;
+    --ofa-space-quad: calc(4*var(--ofa-space));
+    --ofa-space-quarter: calc(0.25*var(--ofa-space));
+  --ofa-space-half: calc(0.5*var(--ofa-space));
+  --box-border-1: 2px solid black;
+  --box-shadow-1: 10px 0 0 coral,
+    -10px 0 0 coral;
+}
+body {
+  font-family: monospace;
+  padding: calc(4*var(--ofa-space));
+}
+
+h1 {
+  font-size: 2rem; 
+    margin-bottom: var(--ofa-space);
+}
+
+h1:only-child {
+    margin-bottom: 0;
+}
+h2 {
+  margin-bottom: var(--ofa-space);
+}
+
+
