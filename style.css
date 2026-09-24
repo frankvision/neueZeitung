@@ -30,6 +30,9 @@ h2 {
   margin-bottom: var(--ofa-space);
 }
 
+h3 {
+  margin-bottom: var(--ofa-space);
+}
 
 p {
   margin-bottom: var(--ofa-space-half);
